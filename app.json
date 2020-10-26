@@ -2,6 +2,7 @@
   "expo": {
     "name": "video-app",
     "slug": "video-app",
+    "privacy": "unlisted",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,11 +14,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shumanshen.videoapp",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.shumanshen.videoapp",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
